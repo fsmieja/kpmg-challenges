@@ -1,0 +1,11 @@
+Test 1 : object = '{"a":{"b":{"c":"d"}}}', key = 'a/b/c'
+Key 'a/b/c' of object '{"a":{"b":{"c":"d"}}}' has value 'd'
+================================
+Test 2 : object = '{"dog":{"color": "brown", "skills": {"climbing": "good", "fetching": "excellent", "running": "fast"}}', key = 'dog/skills'
+Key 'dog/skills' of object '{"dog":{"color": "brown", "skills": {"climbing": "good", "fetching": "excellent", "running": "fast"}}}' has value '{'climbing': 'good', 'fetching': 'excellent', 'running': 'fast'}'
+================================
+Test 3 : object = '{"dog":{"color": "brown", "skills": {"climbing": "good", "fetching": "excellent", "running": "fast"}}', key = 'dog/skills/fetching'
+Key 'dog/skills/fetching' of object '{"dog":{"color": "brown", "skills": {"climbing": "good", "fetching": "excellent", "running": "fast"}}}' has value 'excellent'
+================================
+Test 4 (negative) : object = '{"dog":{"color": "brown", "skills": {"climbing": "good", "fetching": "excellent", "running": "fast"}}', key = 'dog/skills/eating'
+Key 'dog/skills/eating' of object '{"dog":{"color": "brown", "skills": {"climbing": "good", "fetching": "excellent", "running": "fast"}}}' has value 'not found'
